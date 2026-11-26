@@ -7,17 +7,13 @@
 
     <title>考え方の出発点 | Thought</title>
 
-    <!-- Thoughtトップページ -->
-    <a href="../thought.html">Thought</a>
-
-    <!-- テーマページ -->
-    <a href="../themes/theme-01.html">Theme 01</a>
+    <link rel="stylesheet" href="../css/thought.css">
 </head>
 
 <body>
 
     <header>
-        <a class="logo" href="../index.html">THOUGHT.</a>
+        <a class="logo" href="../thought.html">THOUGHT.</a>
 
         <button onclick="toggleLanguage()">
             日本語 / EN
@@ -26,7 +22,7 @@
 
     <main>
 
-        <a class="back" href="../index.html">
+        <a class="back-home" href="../thought.html">
             ←
             <span class="ja">Thoughtトップへ戻る</span>
             <span class="en">Back to Thought</span>
@@ -121,13 +117,13 @@
 
         <div class="nav">
 
-            <a href="../index.html">
+            <a href="../thought.html">
                 ←
                 <span class="ja">トップ</span>
                 <span class="en">Home</span>
             </a>
 
-            <a href="02.html">
+            <a href="theme-02.html">
                 <span class="ja">次のテーマへ →</span>
                 <span class="en">Next Theme →</span>
             </a>
@@ -140,14 +136,7 @@
         THOUGHT. / RYK!LE
     </footer>
 
-    <script src="../js/main.js" defer>
-        function toggleLanguage() {
-            document.body.classList.toggle("english");
-
-            document.documentElement.lang =
-                document.body.classList.contains("english") ? "en" : "ja";
-        }
-    </script>
+    <script src="../js/thought.js" defer></script>
 
 </body>
 </html>
