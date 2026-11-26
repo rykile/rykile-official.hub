@@ -82,7 +82,7 @@
 ---------------------------------------- */
 
 .thought-theme main {
-  width: min(100% - 48px), 820px);
+  width: min(calc(100% - 48px), 820px);
   margin: 0 auto;
   padding: 42px 0 100px;
 }
@@ -310,7 +310,7 @@
   }
 
   .thought-theme main {
-    width: min(100% - 36px), 820px);
+    width: min(calc(100% - 36px), 820px);
     padding-top: 30px;
   }
 
