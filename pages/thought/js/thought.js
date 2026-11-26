@@ -196,6 +196,77 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.documentElement.classList.add("js-enabled");
 
+  /* -----------------------------------------
+     6. SCROLL REVEAL
+     スクロールに合わせて要素を表示
+  ----------------------------------------- */
+
+  const revealItems = document.querySelectorAll(".home-reveal");
+
+  // IntersectionObserverが使えない場合も
+  // コンテンツが表示されるようにする
+  if (!("IntersectionObserver" in window)) {
+
+    revealItems.forEach((item) => {
+      item.classList.add("is-visible");
+    });
+
+  } else {
+
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+
+        entries.forEach((entry) => {
+
+          if (entry.isIntersecting) {
+
+            entry.target.classList.add("is-visible");
+
+            observer.unobserve(entry.target);
+
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.12
+      }
+    );
+
+    revealItems.forEach((item) => {
+      revealObserver.observe(item);
+    });
+
+  }
+
+
+  /* -----------------------------------------
+     7. INITIAL DISPLAY CHECK
+     初期表示の安全対策
+  ----------------------------------------- */
+
+  // JavaScriptの読み込み後も
+  // 表示対象が残らないようにする
+  window.addEventListener("load", () => {
+
+    revealItems.forEach((item) => {
+
+      const rect = item.getBoundingClientRect();
+
+      if (rect.top < window.innerHeight) {
+        item.classList.add("is-visible");
+      }
+
+    });
+
+  });
+
+
+  /* -----------------------------------------
+     8. COMPLETE
+  ----------------------------------------- */
+
   console.log("THOUGHT. Main JavaScript loaded.");
 
 });
