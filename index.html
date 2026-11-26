@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5f3ef">
 
-  <meta
-    name="description"
-    content="RYK!LE — Official Hub. Explore music, creative activities, and thoughts."
-  >
+  <meta name="description" content="RYK!LE — Creator portfolio. Music, languages, expression and ideas.">
 
-  <title>RYK!LE — Official Hub</title>
+  <title>RYK!LE — Creator Portfolio</title>
 
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- External CSS -->
-<link rel="stylesheet" href="./css/style.css?v=20261126-2">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css?v=20261126">
+
 </head>
 
 <body>
 
   <!-- HEADER -->
-  <header class="site-header">
-    <div class="wrap header-inner">
+  <header>
+    <div class="wrap head">
 
-      <a class="brand" href="#top" aria-label="RYK!LE Home">
+      <a class="brand" href="#top">
         RYK!LE<span>.</span>
       </a>
 
-      <div class="header-label">
-        OFFICIAL HUB
-      </div>
+      <nav aria-label="Main navigation">
+        <a href="#about">ABOUT</a>
+        <a href="#activities">ACTIVITIES</a>
+        <a href="#thoughts">THOUGHTS</a>
+        <a href="#links">LINKS</a>
+      </nav>
+
+      <button class="lang" id="lang" type="button">
+        EN / JP
+      </button>
 
     </div>
   </header>
@@ -40,44 +47,132 @@
   <main id="top">
 
     <!-- HERO -->
-    <section class="wrap hero">
+    <div class="wrap hero">
 
-      <div class="hero-content">
+      <div class="hero-grid">
 
-        <div class="kicker">
-          PERSONAL CREATIVE HUB
+        <div class="reveal">
+
+          <div class="kicker">
+            CREATOR PORTFOLIO
+          </div>
+
+          <h1>
+            RYK!<span class="outline">LE.</span>
+          </h1>
+
+          <p
+            class="lead"
+            data-en="Exploring what interests me and turning it into my own form of expression.<br>Music, languages, ideas — this is a place to discover what I do."
+            data-ja="ひとつの肩書きに収まらず、興味のあることを自分なりの表現に。<br>音楽も、言葉も、考えることも。ここは RYK!LE の活動をまとめた場所です。"
+          >
+            ひとつの肩書きに収まらず、興味のあることを自分なりの表現に。
+            <br>
+            音楽も、言葉も、考えることも。ここは RYK!LE の活動をまとめた場所です。
+          </p>
+
+          <div
+            class="meta"
+            data-en="JAPAN · EST. 2008"
+            data-ja="JAPAN · EST. 2008"
+          >
+            JAPAN · EST. 2008
+          </div>
+
         </div>
 
-        <h1>
-          RYK!<span>LE.</span>
-        </h1>
 
-        <p class="hero-text">
-          音楽、表現、思考。
-          <br>
-          それぞれの活動や記録を、ひとつの場所に。
-          <br>
-          RYK!LEの現在地と、これまでの取り組みをまとめたハブページです。
-        </p>
+        <div class="photo-wrap reveal">
 
-        <div class="hero-meta">
-          JAPAN · EST. 2008
+          <img
+            src="assets/images/artist-icon.jpg"
+            alt="RYK!LE portrait"
+            class="photo"
+          >
+
+          <span class="photo-label">
+            A LITTLE ABOUT ME
+          </span>
+
         </div>
 
       </div>
 
+      <div class="scroll">
+        SCROLL TO EXPLORE ↓
+      </div>
 
-      <!-- PROFILE IMAGE -->
-      <div class="photo-wrap">
+    </div>
 
-        <img
-          src="assets/images/artist-icon.jpg"
-          alt="RYK!LE profile"
-          class="profile-photo"
-        >
 
-        <div class="photo-label">
-          RYK!LE / ARTIST
+    <!-- ABOUT -->
+    <section class="content" id="about">
+
+      <div class="wrap">
+
+        <div class="section-head reveal">
+
+          <div>
+            <div class="section-kicker">
+              01 / PROFILE
+            </div>
+
+            <h2 class="section-title">
+              ABOUT
+            </h2>
+          </div>
+
+          <div class="index">
+            WHO I AM
+          </div>
+
+        </div>
+
+
+        <div class="about-grid">
+
+          <div
+            class="aside"
+            data-en="Music, languages, cultures, and little discoveries in everyday life. I learn by exploring and making things."
+            data-ja="音楽、言語、文化、日常の小さな発見。<br>興味を持ったことを、学びながら形にしています。"
+          >
+            音楽、言語、文化、日常の小さな発見。
+            <br>
+            興味を持ったことを、学びながら形にしています。
+          </div>
+
+
+          <div class="about-copy reveal">
+
+            <p
+              data-en="I'm RYK!LE. Music production is one of my main creative outlets, alongside a curiosity for languages, cultures, design, and the ideas I encounter every day."
+              data-ja="RYK!LE（リキル）。音楽制作を軸に、言語や文化、デザイン、日々の考えごとなど、幅広いテーマに関心を持って活動しています。"
+            >
+              RYK!LE（リキル）。音楽制作を軸に、言語や文化、デザイン、日々の考えごとなど、幅広いテーマに関心を持って活動しています。
+            </p>
+
+            <p
+              data-en="I enjoy discovering differences, thinking from my own perspective, and expressing what I find. The process of learning and experimenting matters just as much as the finished work."
+              data-ja="違いを面白がり、自分の視点で考え、表現すること。完成したものだけでなく、試行錯誤や学んでいる過程も大切にしています。"
+            >
+              違いを面白がり、自分の視点で考え、表現すること。完成したものだけでなく、試行錯誤や学んでいる過程も大切にしています。
+            </p>
+
+
+            <div class="tags">
+
+              <span class="tag">
+                Japan × Philippines × Spain
+              </span>
+
+              <span class="tag">Music</span>
+              <span class="tag">Languages</span>
+              <span class="tag">Creative Projects</span>
+
+            </div>
+
+          </div>
+
         </div>
 
       </div>
@@ -85,117 +180,309 @@
     </section>
 
 
-    <!-- CATEGORIES -->
-    <section class="categories">
+    <!-- ACTIVITIES -->
+    <section class="content" id="activities">
 
       <div class="wrap">
 
-        <div class="section-head">
+        <div class="section-head reveal">
 
           <div>
             <div class="section-kicker">
-              EXPLORE
+              02 / WHAT I DO
             </div>
 
-            <h2>
-              Discover my world.
+            <h2 class="section-title">
+              ACTIVITIES
             </h2>
           </div>
 
-          <div class="section-note">
-            SELECT A CATEGORY ↓
+          <div class="index">
+            IN PROGRESS
           </div>
 
         </div>
 
 
-        <div class="category-grid">
+        <div class="activities">
 
-          <!-- OFFICIAL -->
+
+          <article class="activity reveal">
+
+            <div class="activity-top">
+              <span>01 / SOUND</span>
+              <span>MUSIC</span>
+            </div>
+
+            <div>
+              <h3>Music</h3>
+
+              <p
+                data-en="Songwriting, composition, and beatmaking. Turning emotions and moments into sound, without being tied to one genre."
+                data-ja="作詞・作曲・ビートメイク。ジャンルに縛られず、感情やその時々の感覚を音にしています。"
+              >
+                作詞・作曲・ビートメイク。ジャンルに縛られず、感情やその時々の感覚を音にしています。
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="activity reveal">
+
+            <div class="activity-top">
+              <span>02 / WORDS</span>
+              <span>LANGUAGES</span>
+            </div>
+
+            <div>
+              <h3>Languages</h3>
+
+              <p
+                data-en="Exploring languages and cultures through Japanese, English, Korean, Spanish, German, Tagalog, and more."
+                data-ja="日本語を軸に、英語・韓国語・スペイン語・ドイツ語・タガログ語などを学び、言葉と文化の違いを探っています。"
+              >
+                日本語を軸に、英語・韓国語・スペイン語・ドイツ語・タガログ語などを学び、言葉と文化の違いを探っています。
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="activity reveal">
+
+            <div class="activity-top">
+              <span>03 / PERSPECTIVE</span>
+              <span>EXPRESSION</span>
+            </div>
+
+            <div>
+              <h3>Expression</h3>
+
+              <p
+                data-en="Sharing thoughts and observations through writing, visuals, and online posts."
+                data-ja="日常で感じたことや自分の考えを、文章・ビジュアル・発信を通して表現しています。"
+              >
+                日常で感じたことや自分の考えを、文章・ビジュアル・発信を通して表現しています。
+              </p>
+            </div>
+
+          </article>
+
+
+          <article class="activity reveal">
+
+            <div class="activity-top">
+              <span>04 / EXPERIMENT</span>
+              <span>PROJECTS</span>
+            </div>
+
+            <div>
+              <h3>Projects</h3>
+
+              <p
+                data-en="Experimenting with web creation and digital tools to expand the ways I can create and communicate."
+                data-ja="Web制作やデジタルツールなど、新しいアイデアを試しながら、自分にできる表現の幅を広げています。"
+              >
+                Web制作やデジタルツールなど、新しいアイデアを試しながら、自分にできる表現の幅を広げています。
+              </p>
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- THOUGHTS -->
+    <section class="content dark" id="thoughts">
+
+      <div class="wrap">
+
+        <div class="section-head reveal">
+
+          <div>
+            <div class="section-kicker">
+              03 / POINT OF VIEW
+            </div>
+
+            <h2 class="section-title">
+              THOUGHTS
+            </h2>
+          </div>
+
+          <div class="index">
+            IDEAS & VALUES
+          </div>
+
+        </div>
+
+
+        <div class="thought-grid">
+
+          <h3
+            class="thought-title"
+            data-en="THINK.<br>EXPRESS.<br>EXPLORE."
+            data-ja="考える。<br>伝える。<br>広げる。"
+          >
+            考える。
+            <br>
+            伝える。
+            <br>
+            広げる。
+          </h3>
+
+
+          <div class="thought-copy reveal">
+
+            <p
+              data-en="Trying to understand where people are coming from. Staying curious instead of rushing to judge.<br><br>I want to keep my own perspective while making room for different ones. This is where I collect those thoughts and discoveries."
+              data-ja="人それぞれの視点や背景を知ろうとすること。すぐに決めつけず、理解しようとすること。<br><br>自分の考えを持ちながら、違う意見にも向き合う。そんな日々の思考や気づきを、ひとつずつ言葉にしています。"
+            >
+              人それぞれの視点や背景を知ろうとすること。すぐに決めつけず、理解しようとすること。
+              <br><br>
+              自分の考えを持ちながら、違う意見にも向き合う。そんな日々の思考や気づきを、ひとつずつ言葉にしています。
+            </p>
+
+            <a
+              class="text-link"
+              href="pages/thought/thought.html"
+            >
+              <span
+                data-en="READ MY THOUGHTS"
+                data-ja="THOUGHTS を読む"
+              >
+                THOUGHTS を読む
+              </span>
+
+              ↗
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- LINKS -->
+    <section class="content" id="links">
+
+      <div class="wrap">
+
+        <div class="section-head reveal">
+
+          <div>
+            <div class="section-kicker">
+              04 / FIND ME
+            </div>
+
+            <h2 class="section-title">
+              LINKS
+            </h2>
+          </div>
+
+          <div class="index">
+            ELSEWHERE
+          </div>
+
+        </div>
+
+
+        <div class="links">
+
+
           <a
-            class="category-card"
-            href="./Official/index.html"
+            class="link-card reveal"
+            href="https://youtube.com/@rykilefirst"
+            rel="noopener noreferrer"
+            target="_blank"
           >
 
-            <div class="card-number">
-              01 / PROFILE
+            <div>
+              <div class="link-type">
+                CREATOR / VIDEO
+              </div>
+
+              <div class="link-name">
+                YouTube
+              </div>
             </div>
 
-            <div class="card-content">
-
-              <h3>Official</h3>
-
-              <p>
-                プロフィール、活動内容、取り組み。
-                RYK!LEについて知るための公式ページ。
-              </p>
-
-            </div>
-
-            <div class="card-bottom">
-              <span>EXPLORE OFFICIAL</span>
-              <span class="arrow">↗</span>
-            </div>
+            <span class="arrow">↗</span>
 
           </a>
 
 
-          <!-- ARTIST -->
           <a
-            class="category-card"
-            href="./pages/artist/artist.html"
+            class="link-card reveal"
+            href="https://youtube.com/@rykile_ongaku"
+            rel="noopener noreferrer"
+            target="_blank"
           >
 
-            <div class="card-number">
-              02 / MUSIC
+            <div>
+              <div class="link-type">
+                MUSIC CHANNEL
+              </div>
+
+              <div class="link-name">
+                YouTube Music
+              </div>
             </div>
 
-            <div class="card-content">
-
-              <h3>Artist</h3>
-
-              <p>
-                楽曲、音楽制作、リリース情報。
-                アーティストとしての活動を紹介。
-              </p>
-
-            </div>
-
-            <div class="card-bottom">
-              <span>EXPLORE ARTIST</span>
-              <span class="arrow">↗</span>
-            </div>
+            <span class="arrow">↗</span>
 
           </a>
 
 
-          <!-- THOUGHT -->
           <a
-            class="category-card"
-            href="./pages/thought/thought.html"
+            class="link-card reveal"
+            href="https://open.spotify.com/artist/3QT5Domew29dAmnyotCjl0"
+            rel="noopener noreferrer"
+            target="_blank"
           >
 
-            <div class="card-number">
-              03 / IDEAS
+            <div>
+              <div class="link-type">
+                STREAMING
+              </div>
+
+              <div class="link-name">
+                Spotify
+              </div>
             </div>
 
-            <div class="card-content">
-
-              <h3>Thought</h3>
-
-              <p>
-                日々の考え、価値観、視点。
-                自分なりの思考を記録した読み物。
-              </p>
-
-            </div>
-
-            <div class="card-bottom">
-              <span>EXPLORE THOUGHT</span>
-              <span class="arrow">↗</span>
-            </div>
+            <span class="arrow">↗</span>
 
           </a>
+
+
+          <a
+            class="link-card reveal"
+            href="pages/thought/thought.html"
+          >
+
+            <div>
+              <div class="link-type">
+                WRITING / IDEAS
+              </div>
+
+              <div class="link-name">
+                Thought
+              </div>
+            </div>
+
+            <span class="arrow">↗</span>
+
+          </a>
+
 
         </div>
 
@@ -207,21 +494,21 @@
 
 
   <!-- FOOTER -->
-  <footer class="site-footer">
+  <footer class="wrap">
 
-    <div class="wrap footer-inner">
+    <div class="brand">
+      RYK!LE<span>.</span>
+    </div>
 
-      <div class="brand">
-        RYK!LE<span>.</span>
-      </div>
-
-      <div class="footer-note">
-        © 2026 RYK!LE — OFFICIAL HUB
-      </div>
-
+    <div class="footer-note">
+      © 2026 RYK!LE — CREATOR PORTFOLIO
     </div>
 
   </footer>
+
+
+  <!-- JavaScript -->
+  <script src="js/script.js?v=20261126"></script>
 
 </body>
 </html>
