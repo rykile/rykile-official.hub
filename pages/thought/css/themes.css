@@ -310,7 +310,7 @@
   }
 
   .thought-theme main {
-    width: min(100% - 36px, 820px);
+    width: min(100% - 36px), 820px);
     padding-top: 30px;
   }
 
