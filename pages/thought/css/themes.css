@@ -1,0 +1,355 @@
+/* ========================================
+   THOUGHT. — Theme Pages
+   Theme: Ivory & Forest Green
+   Applies to: theme-01 ~ theme-04
+======================================== */
+
+/* ----------------------------------------
+   01. Base
+---------------------------------------- */
+
+.thought-theme {
+  --theme-bg: #f6f3eb;
+  --theme-paper: #fffdf7;
+  --theme-green: #355b45;
+  --theme-green-dark: #263f32;
+  --theme-text: #30372f;
+  --theme-muted: #7b8077;
+  --theme-border: #deded2;
+  --theme-accent: #8a9b79;
+
+  background: var(--theme-bg);
+  color: var(--theme-text);
+  font-family:
+    "Noto Sans JP",
+    "Hiragino Kaku Gothic ProN",
+    "Yu Gothic",
+    sans-serif;
+  line-height: 1.85;
+  min-height: 100vh;
+}
+
+/* ----------------------------------------
+   02. Header
+---------------------------------------- */
+
+.thought-theme header {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+
+  border-bottom: 1px solid var(--theme-border);
+}
+
+.thought-theme .logo {
+  color: var(--theme-green);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-decoration: none;
+}
+
+.thought-theme header button {
+  padding: 8px 18px;
+  border: 1px solid var(--theme-green);
+  border-radius: 999px;
+
+  background: transparent;
+  color: var(--theme-green);
+
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease;
+}
+
+.thought-theme header button:hover {
+  background: var(--theme-green);
+  color: #fffdf7;
+}
+
+/* ----------------------------------------
+   03. Main Layout
+---------------------------------------- */
+
+.thought-theme main {
+  width: min(100% - 48px, 820px);
+  margin: 0 auto;
+  padding: 42px 0 100px;
+}
+
+/* ----------------------------------------
+   04. Back Home Link
+---------------------------------------- */
+
+.thought-theme .back-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-bottom: 42px;
+  padding: 8px 16px;
+
+  border: 1px solid var(--theme-border);
+  border-radius: 999px;
+
+  color: var(--theme-green);
+  background: var(--theme-paper);
+
+  font-size: 0.85rem;
+  text-decoration: none;
+
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.thought-theme .back-home:hover {
+  border-color: var(--theme-green);
+  background: #f0f1e8;
+  transform: translateX(-3px);
+}
+
+/* ----------------------------------------
+   05. Theme Introduction
+---------------------------------------- */
+
+.thought-theme .eyebrow {
+  margin-bottom: 14px;
+
+  color: var(--theme-accent);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.thought-theme h1 {
+  margin: 0;
+  color: var(--theme-green-dark);
+  font-size: clamp(2.2rem, 6vw, 3.8rem);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+}
+
+.thought-theme .subtitle {
+  margin-top: 14px;
+  color: var(--theme-muted);
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+}
+
+.thought-theme .intro {
+  margin-top: 36px;
+  padding: 28px 30px;
+
+  border: 1px solid var(--theme-border);
+  border-radius: 14px;
+
+  background: var(--theme-paper);
+  color: var(--theme-text);
+
+  font-size: 0.95rem;
+  line-height: 2;
+}
+
+.thought-theme .intro p {
+  margin: 0 0 1em;
+}
+
+.thought-theme .intro p:last-child {
+  margin-bottom: 0;
+}
+
+/* ----------------------------------------
+   06. Chapter List Heading
+---------------------------------------- */
+
+.thought-theme h2 {
+  margin: 64px 0 24px;
+
+  color: var(--theme-green);
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+/* ----------------------------------------
+   07. Chapter Cards
+---------------------------------------- */
+
+.thought-theme .chapter {
+  position: relative;
+  display: block;
+
+  margin-bottom: 16px;
+  padding: 24px 28px;
+
+  border: 1px solid var(--theme-border);
+  border-radius: 12px;
+
+  background: var(--theme-paper);
+  color: var(--theme-text);
+  text-decoration: none;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.thought-theme .chapter:hover {
+  transform: translateY(-3px);
+  border-color: var(--theme-accent);
+  box-shadow: 0 8px 24px rgba(38, 63, 50, 0.07);
+}
+
+.thought-theme .chapter small {
+  display: block;
+  margin-bottom: 8px;
+
+  color: var(--theme-accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.thought-theme .chapter h3 {
+  margin: 0;
+
+  color: var(--theme-green-dark);
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+.thought-theme .chapter p {
+  margin: 10px 0 0;
+
+  color: var(--theme-muted);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.thought-theme .chapter .read {
+  display: inline-block;
+  margin-top: 16px;
+
+  color: var(--theme-green);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+/* ----------------------------------------
+   08. Theme Navigation
+---------------------------------------- */
+
+.thought-theme .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+
+  margin-top: 64px;
+  padding-top: 28px;
+
+  border-top: 1px solid var(--theme-border);
+}
+
+.thought-theme .nav a {
+  display: inline-block;
+  max-width: 48%;
+
+  color: var(--theme-green);
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.thought-theme .nav a:hover {
+  color: var(--theme-green-dark);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* ----------------------------------------
+   09. Footer
+---------------------------------------- */
+
+.thought-theme footer {
+  padding: 28px 24px;
+
+  border-top: 1px solid var(--theme-border);
+
+  color: var(--theme-muted);
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+/* ----------------------------------------
+   10. Responsive
+---------------------------------------- */
+
+@media (max-width: 600px) {
+  .thought-theme header {
+    padding: 18px 20px;
+  }
+
+  .thought-theme main {
+    width: min(100% - 36px, 820px);
+    padding-top: 30px;
+  }
+
+  .thought-theme .back-home {
+    margin-bottom: 32px;
+  }
+
+  .thought-theme .intro {
+    margin-top: 28px;
+    padding: 22px 20px;
+  }
+
+  .thought-theme h2 {
+    margin-top: 48px;
+  }
+
+  .thought-theme .chapter {
+    padding: 20px;
+  }
+
+  .thought-theme .chapter h3 {
+    font-size: 1.05rem;
+  }
+
+  .thought-theme .nav {
+    margin-top: 48px;
+  }
+}
+
+/* ----------------------------------------
+   11. Reduced Motion
+---------------------------------------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .thought-theme *,
+  .thought-theme *::before,
+  .thought-theme *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
